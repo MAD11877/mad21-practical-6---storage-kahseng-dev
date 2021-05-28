@@ -20,7 +20,7 @@ public class ListActivity extends AppCompatActivity {
     private final static String TAG = "Main Activity";
 
     static ArrayList<User> userList = new ArrayList<>();
-    DBHandler dbHandler = new DBHandler(this, "users.db", null , 1);
+    DBHandler dbHandler = new DBHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

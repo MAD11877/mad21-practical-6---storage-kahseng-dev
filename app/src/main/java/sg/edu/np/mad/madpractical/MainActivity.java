@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private final static String TAG = "Main Activity";
 
     static User user = new User();
-    DBHandler dbHandler = new DBHandler(this, "users.db", null , 1);
+    DBHandler dbHandler = new DBHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.v(TAG, "Create");
 
-        TextView userName = findViewById(R.id.userName);
+        TextView userName = findViewById(R.id.txtName);
         TextView userDescription = findViewById(R.id.userDescription);
         Button followButton = findViewById(R.id.btnFollow);
 
